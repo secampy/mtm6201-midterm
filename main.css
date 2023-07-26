@@ -1,0 +1,387 @@
+/* basic style for whole website  */
+body{
+    font-family: 'Epilogue', sans-serif;
+    color: #0d0d0d;
+    background-color: #f2f2f2;
+}
+
+
+.header_container{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.navigation_bar {
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 35%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul{
+    padding: 0%;
+}
+
+.navigation_bar ul li{
+    list-style-type: none;
+}
+
+.navigation_bar a {
+    color: #0d0d0d;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+    transition: 0.25s ease-in-out;
+}
+
+.navigation_bar a:hover {
+    color: #FFD600;
+    font-size: 1.2rem;
+    
+}
+
+.navigation_bar a.home{
+    background-color: #0d0d0d;
+    color: #0f5ca3;
+    font-weight: 700;
+}
+
+.skip {
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    text-decoration: none;
+    color: #0d0d0d;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.foot{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 2rem;
+}
+
+
+.photos picture img{
+    width: 75%;
+    margin-top: 1rem;
+    margin: 1rem auto auto auto;
+    justify-content: center;
+    display: flex;
+    box-shadow: 5px 5px 5px black;
+}
+
+.blog img{
+    width: 75%;
+    margin-top: 1rem;
+    margin: 1rem auto auto auto;
+    justify-content: center;
+    display: flex;
+    box-shadow: 5px 5px 5px black;
+}
+
+.photos,.blog h2,h3{
+    text-align: center;
+}
+
+.photos,.blog p{
+    display: block;
+    top: 10%;
+    bottom: 10%;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Della Respira', serif;
+}
+
+.photos,.blog p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+header hr{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+#blog_title{
+    text-align: center;
+}
+
+.blog h3{
+    padding-top: 1.5rem;
+}
+
+.blog p{
+    padding: 10px 40px;
+}
+hr{
+    border: 1px solid #FFD600;
+    margin: auto;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+}
+
+.contactbox {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+
+.forminput {
+    width: 99.5%;
+    height: 1.5rem;
+    font-size: 18px;
+}
+
+.forminput:focus{
+    background-color: #fbffff;
+    color: black;
+}
+
+.formmessageinput:focus{
+    background-color: #fbffff;
+    color: black;
+}
+
+.formmessageinput {
+    width: 99.5%;
+    font-size: 18px;
+    height: 5rem;
+}
+
+.formbutton {
+    color: #FFD600;
+    background-color: #0D0D0D;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.7rem;
+    border: 1px solid transparent;
+    padding: 0.1rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    transition: ease-in-out 0.5s;
+}
+
+.formbutton:hover{
+    translate: x-axis 5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 1.6rem;
+}
+ 
+
+.formbutton:active{
+    background-color: hsl(228, 69%, 32%);
+    color: #0d0d0d;
+}
+
+.contactbox{
+    position: relative;
+}
+
+.formbutton{
+    position: absolute;
+    margin-left: 40%;
+    transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* about us  page */
+ 
+.ceo{
+    justify-content: center;
+    display: flex;
+}
+
+ .ceo img{
+    width: 75%;
+    box-shadow: 5px 5px 5px black;
+}
+
+#aboutush2{
+    text-align: center;
+}
+
+.ceo_bio{
+    display: block;
+    top: 10%;
+    bottom: 10%;
+    padding: 2.5rem;
+    text-align: center;
+}
+ 
+
+ 
+
+@media screen and (min-width: 960px) {
+    /* resizing logo */
+    .logo{
+        width: 250px;
+    }
+
+    /* aligning navbar to right */
+    header{
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .navigation_bar {
+        text-align: center;
+    }
+
+    .navigation_bar ul li {
+        display: inline-block;
+        text-decoration: none;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .navigation_bar a {
+        padding: 1.2rem 7.5rem;
+    }
+
+    
+    .navigation_bar a.home {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    /* aligning content in header with wraper */
+    .header_container{
+        width: 84%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    /* aligning content in main and footer from wraper */
+    .main_container,.footer_container{
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+    }
+
+
+    .macro{ grid-area: p1}
+    .street{ grid-area: p2;}
+    .creative{ grid-area: p3;}
+    #blog_hr{grid-area: h1}
+    .gadgets{grid-area: b1;}
+    .softwares{grid-area: b2;}
+
+    .photography{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        'p1 p1 p2 p2 p3 p3'
+        ;
+        gap: 1rem;
+    }
+
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        'b1 b1 b1 b2 b2 b2'
+        ;
+        gap: 1rem;
+    }
+
+    .photos p{
+        font-size: 1.2rem;
+    }
+
+
+    /* 
+    adds style to contact page
+    */
+
+    /* conatct page */
+    .details{ grid-area: u1}
+    .location{ grid-area: f1}
+    .conatctbox{ grid-area: f2;}
+
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        'f1 f2'
+        'u1 u1'
+        ;
+        gap: 1rem;
+    }
+
+    /* 
+    adds style to about page
+    */
+
+
+
+    .ceo_bio{ grid-area: g1;}
+    .ceo{ grid-area: g2;}
+    .ceo img{
+        height: fit-content;
+    }
+    
+    
+    .photographer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 'g1 g2';
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+
+    /* 
+    adding animations
+     */
+
+    .ceo_bio p::before {  
+        transform: scaleX(0);
+        transform-origin: bottom right;
+      }
+      
+    .ceo_bio p:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      
+    .ceo_bio p::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        inset: 0 0 0 0;
+        background: #FFD600;
+        z-index: -1;
+        transition: transform .4s ease;
+      }
+      
+    .ceo_bio p{
+        position: relative;
+      }
+    
+      }
